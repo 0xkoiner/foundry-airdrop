@@ -11,16 +11,16 @@
   Users can delegate the claim process to another account, allowing someone else to call the claim function on their behalf.
 
 <h3>How It Works</h3>
-• Eligibility Verification:
-  The contract uses a Merkle Tree to verify if a user is eligible for the airdrop. Only accounts included in the Merkle Root can claim tokens.
-• Secure Signing:
-  Implements the EIP-712 standard for signing and verifying messages off-chain, adding an extra layer of security.
-• Claim Process:
-  Eligible users (or their delegates) call the claim function with their Merkle proof and signature to receive their tokens.
-• Delegated Claims:
-  Users can authorize another account to claim tokens on their behalf by providing a valid signature and Merkle proof.
+• Eligibility Verification: <br></br>
+  The contract uses a Merkle Tree to verify if a user is eligible for the airdrop. Only accounts included in the Merkle Root can claim tokens. <br></br>
+• Secure Signing: <br></br>
+  Implements the EIP-712 standard for signing and verifying messages off-chain, adding an extra layer of security. <br></br>
+• Claim Process: <br></br>
+  Eligible users (or their delegates) call the claim function with their Merkle proof and signature to receive their tokens. <br></br>
+• Delegated Claims: <br></br>
+  Users can authorize another account to claim tokens on their behalf by providing a valid signature and Merkle proof. <br></br>
 
 <h3>Contract Highlights</h3>
-• `EIP-712:` Implements structured data signing to secure off-chain messages.
-• `Merkle Proof:` Validates inclusion in the Merkle Tree for eligibility.
-• `ECDSA:` Recovers the signer’s public key to authenticate claims.
+• `EIP-712:` Implements structured data signing to secure off-chain messages. <br></br>
+• `Merkle Proof:` Validates inclusion in the Merkle Tree for eligibility. <br></br>
+• `ECDSA:` Recovers the signer’s public key to authenticate claims. <br></br>
